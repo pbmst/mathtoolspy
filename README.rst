@@ -2,8 +2,11 @@
 mathtoolspy
 ===========
 
-.. image:: https://img.shields.io/codeship/72f0dc80-ba3d-0134-5de7-5e654efab061/master.svg
-    :target: https://codeship.com//projects/195227
+.. image:: https://img.shields.io/codeship/d89309c0-4619-0135-9944-0ac58edb84f9/master.svg
+    :target: https://codeship.com//projects/231332
+
+.. image:: https://readthedocs.org/projects/mathtoolspy/badge
+    :target: http://mathtoolspy.readthedocs.io
 
 A fast, efficient Python library for mathematically operations, like
 integration, solver, distributions and other useful functions.
