@@ -1,6 +1,6 @@
-=========
-mathtools
-=========
+===========
+mathtoolspy
+===========
 
 .. image:: https://img.shields.io/codeship/72f0dc80-ba3d-0134-5de7-5e654efab061/master.svg
     :target: https://codeship.com//projects/195227
@@ -14,7 +14,7 @@ Example Usage
 
 .. code-block:: python
 
-    >>> from mathtools.integration import gauss_kronrod
+    >>> from mathtoolspy.integration import gauss_kronrod
 
     >>> fct = lambda x:exp(-x*x)
     >>> integrator = gauss_kronrod()
@@ -28,13 +28,13 @@ The latest stable version can always be installed or updated via pip:
 
 .. code-block:: bash
 
-    $ pip install mathtools
+    $ pip install mathtoolspy
 
 If the above fails, please try easy_install instead:
 
 .. code-block:: bash
 
-    $ easy_install mathtools
+    $ easy_install mathtoolspy
 
 
 Examples
@@ -62,14 +62,14 @@ The latest development version can be installed directly from GitHub:
 
 .. code-block:: bash
 
-    $ pip install --upgrade git+https://github.com/pbrisk/mathtools.git
+    $ pip install --upgrade git+https://github.com/pbrisk/mathtoolspy.git
 
 
 Contributions
 -------------
 
-.. _issues: https://github.com/pbrisk/mathtools/issues
-.. __: https://github.com/pbrisk/mathtools/pulls
+.. _issues: https://github.com/pbrisk/mathtoolspy/issues
+.. __: https://github.com/pbrisk/mathtoolspy/pulls
 
 Issues_ and `Pull Requests`__ are always welcome.
 
@@ -77,7 +77,7 @@ Issues_ and `Pull Requests`__ are always welcome.
 License
 -------
 
-.. __: https://github.com/pbrisk/mathtools/raw/master/LICENSE
+.. __: https://github.com/pbrisk/mathtoolspy/raw/master/LICENSE
 
 Code and documentation are available according to the Apache Software License (see LICENSE__).
 

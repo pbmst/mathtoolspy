@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-#  mathtools
+#  mathtoolspy
 #  ------------
 #  A fast, efficient Python library for mathematically operations, like
 #  integration, solver, distributions and other useful functions.
@@ -11,7 +11,6 @@
 #  License: APACHE Version 2 License (see LICENSE file)
 
 
-from gauss_kronrod_integrator import *
-from gauss_legendre_integrator import *
-from gauss_lobatto_integrator import *
-from simplex_integrator import *
+from math_fcts import *
+from mathconst import *
+from surface import *

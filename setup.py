@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-#  mathtools
+#  mathtoolspy
 #  ------------
 #  A fast, efficient Python library for mathematically operations, like
 #  integration, solver, distributions and other useful functions.
@@ -18,15 +18,15 @@ except ImportError:
     from distutils.core import setup
 
 setup(
-    name='mathtools',
+    name='mathtoolspy',
     description='Python library for mathematically operations, like  integration, solver, distributions and other useful simple and rich math functionality.',
     version='0.1',
     author='Deutsche Postbank AG [pbrisk]',
     author_email='pbrisk_at_github@icloud.com',
-    url='https://github.com/pbrisk/mathtools',
-    bugtrack_url='https://github.com/pbrisk/mathtools/issues',
+    url='https://github.com/pbrisk/mathtoolspy',
+    bugtrack_url='https://github.com/pbrisk/mathtoolspy/issues',
     license='Apache License 2.0',
-    packages=['mathtools', 'mathtools.distribution', 'mathtools.integration', 'mathtools.solver', 'mathtools.utils'],
+    packages=['mathtoolspy', 'mathtoolspy.distribution', 'mathtoolspy.integration', 'mathtoolspy.solver', 'mathtoolspy.utils'],
     long_description=codecs.open('README.rst', encoding='utf-8').read(),
     platforms='any',
     classifiers=[

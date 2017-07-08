@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-#  mathtools
+#  mathtoolspy
 #  ------------
 #  A fast, efficient Python library for mathematically operations, like
 #  integration, solver, distributions and other useful functions.
@@ -13,7 +13,7 @@
 
 from math import cos
 
-from mathtools.utils.mathconst import PI
+from mathtoolspy.utils.mathconst import PI
 
 
 class GaussLegendreIntegrator():

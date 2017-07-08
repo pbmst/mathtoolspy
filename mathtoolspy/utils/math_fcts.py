@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-#  mathtools
+#  mathtoolspy
 #  ------------
 #  A fast, efficient Python library for mathematically operations, like
 #  integration, solver, distributions and other useful functions.

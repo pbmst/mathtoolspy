@@ -6,22 +6,22 @@ Created on 16.12.2016
 import unittest
 from math import exp, cos
 
-from mathtools.distribution.normal_distribution import density_normal_dist, cdf_abramowitz_stegun
-from mathtools.integration.gauss_kronrod_integrator import GaussKronrodIntegrator as gauss_kronrod
-from mathtools.integration.gauss_lobatto_integrator import GaussLobattoIntegrator as gauss_lobatto
-from mathtools.integration.simplex_integrator import SimplexIntegrator as simplex
-from mathtools.utils.math_fcts import CompositionFct
-from mathtools.utils.mathconst import PI
+from mathtoolspy.distribution.normal_distribution import density_normal_dist, cdf_abramowitz_stegun
+from mathtoolspy.integration.gauss_kronrod_integrator import GaussKronrodIntegrator as gauss_kronrod
+from mathtoolspy.integration.gauss_lobatto_integrator import GaussLobattoIntegrator as gauss_lobatto
+from mathtoolspy.integration.simplex_integrator import SimplexIntegrator as simplex
+from mathtoolspy.utils.math_fcts import CompositionFct
+from mathtoolspy.utils.mathconst import PI
 
-from mathtools.integration.gauss_legendre_integrator import GaussLegendreIntegrator as gauss_legendre
-from mathtools.solver.optimizer import Optimizer1Dim, Constraint, TangentsTransformation, TangentsInverseTransformation, \
+from mathtoolspy.integration.gauss_legendre_integrator import GaussLegendreIntegrator as gauss_legendre
+from mathtoolspy.solver.optimizer import Optimizer1Dim, Constraint, TangentsTransformation, TangentsInverseTransformation, \
     OptimizerResult
-from mathtools.solver.minimize_algorithm_1dim_brent import minimize_algorithm_1dim_brent as brent
-from mathtools.solver.minimize_algorithm_1dim_golden import minimize_algorithm_1dim_golden as golden
-from mathtools.solver.minimum_bracketing import minimum_bracketing, mn_brak
-from mathtools.solver.analytic_solver import roots_of_cubic_polynom
+from mathtoolspy.solver.minimize_algorithm_1dim_brent import minimize_algorithm_1dim_brent as brent
+from mathtoolspy.solver.minimize_algorithm_1dim_golden import minimize_algorithm_1dim_golden as golden
+from mathtoolspy.solver.minimum_bracketing import minimum_bracketing, mn_brak
+from mathtoolspy.solver.analytic_solver import roots_of_cubic_polynom
 
-from mathtools import Surface
+from mathtoolspy import Surface
 
 def generate_integration_tests():
     def print_(f, msg):

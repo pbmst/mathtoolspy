@@ -15,13 +15,13 @@ The latest stable version can always be installed or updated via pip:
 
 .. code-block:: bash
 
-    $ pip install mathtools
+    $ pip install mathtoolspy
 
 If the above fails, please try easy_install instead:
 
 .. code-block:: bash
 
-    $ easy_install mathtools
+    $ easy_install mathtoolspy
 
 
 Requirements

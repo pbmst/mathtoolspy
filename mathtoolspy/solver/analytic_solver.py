@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-#  mathtools
+#  mathtoolspy
 #  ------------
 #  A fast, efficient Python library for mathematically operations, like
 #  integration, solver, distributions and other useful functions.
@@ -13,9 +13,9 @@
 
 from math import acos, sqrt, cos
 
-from mathtools.utils.mathconst import PI
+from mathtoolspy.utils.mathconst import PI
 
-from mathtools.utils.math_fcts import sign
+from mathtoolspy.utils.math_fcts import sign
 
 
 def roots_of_cubic_polynom(a1, a2, a3):

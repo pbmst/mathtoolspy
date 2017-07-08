@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-#  mathtools
+#  mathtoolspy
 #  ------------
 #  A fast, efficient Python library for mathematically operations, like
 #  integration, solver, distributions and other useful functions.
@@ -11,7 +11,7 @@
 #  License: APACHE Version 2 License (see LICENSE file)
 
 
-from mathtools.solver import minimize_algorithm_1dim_brent
+from mathtoolspy.solver import minimize_algorithm_1dim_brent
 
 
 class MinimizeAlgorithmNDimPowell(object):

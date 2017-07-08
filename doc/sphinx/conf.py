@@ -18,12 +18,12 @@
 #
 import os
 import sys
-#sys.path.insert(0, os.path.abspath('../mathtools'))
-sys.path.insert(0, os.path.abspath('../../mathtools'))
-sys.path.insert(0, os.path.abspath('../../mathtools/distribution'))
-sys.path.insert(0, os.path.abspath('../../mathtools/integration'))
-sys.path.insert(0, os.path.abspath('../../mathtools/solver'))
-sys.path.insert(0, os.path.abspath('../../mathtools/utils'))
+#sys.path.insert(0, os.path.abspath('../mathtoolspy'))
+sys.path.insert(0, os.path.abspath('../../mathtoolspy'))
+sys.path.insert(0, os.path.abspath('../../mathtoolspy/distribution'))
+sys.path.insert(0, os.path.abspath('../../mathtoolspy/integration'))
+sys.path.insert(0, os.path.abspath('../../mathtoolspy/solver'))
+sys.path.insert(0, os.path.abspath('../../mathtoolspy/utils'))
 sys.path.insert(0, os.path.abspath('..'))
 
 source_parsers = {'.md': 'recommonmark.parser.CommonMarkParser',}
@@ -70,7 +70,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = 'mathtools'
+project = 'mathtoolspy'
 copyright = '2017, Deutsche Postbank'
 author = 'pbrisk_at_github@icloud.com'
 
@@ -154,7 +154,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'mathtools.tex', 'MathTools Documentation',
+    (master_doc, 'mathtoolspy.tex', 'MathTools Documentation',
      'Deutsche Postbank AG', 'manual'),
 ]
 
@@ -164,7 +164,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'mathtools', 'MathTools Documentation', [author], 1)
+    (master_doc, 'mathtoolspy', 'MathTools Documentation', [author], 1)
 ]
 
 
@@ -174,7 +174,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'mathtools', 'MathTools Documentation',
+    (master_doc, 'mathtoolspy', 'MathTools Documentation',
      author, 'MathTools', 'Python library for mathematically operations, like  integration, solver, distributions and other useful simple and rich math functionality.',
      'Miscellaneous'),
 ]

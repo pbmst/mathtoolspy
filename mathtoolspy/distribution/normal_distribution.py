@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-#  mathtools
+#  mathtoolspy
 #  ------------
 #  A fast, efficient Python library for mathematically operations, like
 #  integration, solver, distributions and other useful functions.
@@ -12,7 +12,7 @@
 
 
 from math import exp
-from mathtools.utils.mathconst import ONE_OVER_SQRT_OF_TWO_PI
+from mathtoolspy.utils.mathconst import ONE_OVER_SQRT_OF_TWO_PI
 
 
 def density_normal_dist(x):

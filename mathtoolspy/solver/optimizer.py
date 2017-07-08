@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-#  mathtools
+#  mathtoolspy
 #  ------------
 #  A fast, efficient Python library for mathematically operations, like
 #  integration, solver, distributions and other useful functions.
@@ -13,7 +13,7 @@
 
 from math import tan, atan, fabs
 
-from mathtools.utils.mathconst import PI, DOUBLE_TOL
+from mathtoolspy.utils.mathconst import PI, DOUBLE_TOL
 from minimum_bracketing import minimum_bracketing
 
 MAX_NUMBER_OF_FUNCTION_CALLS = 5000
