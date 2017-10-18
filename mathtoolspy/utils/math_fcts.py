@@ -13,7 +13,7 @@
 """
 The MathFct contains some mathematically method, which are not supported by the Python lib.
 """
-
+import operator
 from mathconst import DOUBLE_TOL
 
 
@@ -25,7 +25,7 @@ def abs_sign(a, b):
 def sign(x):
     '''
     Returns the sign of the double number x.
-    -1 if x < 0. 1 if x > 0 and 0 if x == 0
+    -1 if x < 0; 1 if x > 0 and 0 if x == 0
     '''
     if x < 0:
         return -1
@@ -37,6 +37,15 @@ def sign(x):
 
 def float_equal(x, y, tol=DOUBLE_TOL):
     return abs(x - y) < tol
+
+
+def prod(factors):
+    """
+    The product of the given factors (iterable)
+    :param factors:
+    :return:
+    """
+    return reduce(operator.mul, factors, 1.0)
 
 
 def interpolation_linear(x, x1, x2, y1, y2):
@@ -63,6 +72,20 @@ def interpolation_bilinear(x, y, x1, x2, y1, y2, z11, z21, z22, z12):
     v4 = (1.0 - t) * s * z12
     ret = v1 + v2 + v3 + v4
     return ret
+
+
+def get_grid(start, end, nsteps=100):
+    """
+    :param start: the start value of the generated list.
+    :type float
+    :param end: the end value of the generated list.
+    :type float
+    :param nsteps: optional the number of steps (default=100), i.e. the generated list contains nstep+1 values.
+    :type int
+    Generates a equal distanced list of float values with nsteps+1 values, begining start and ending with end.
+    """
+    step = (end-start) / float(nsteps)
+    return [start + i * step for i in xrange(nsteps+1)]
 
 
 class FctWithCount(object):

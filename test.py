@@ -22,6 +22,7 @@ from mathtoolspy.solver.minimum_bracketing import minimum_bracketing, mn_brak
 from mathtoolspy.solver.analytic_solver import roots_of_cubic_polynom
 
 from mathtoolspy import Surface
+from mathtoolspy.utils.math_fcts import prod
 
 def generate_integration_tests():
     def print_(f, msg):
@@ -1072,6 +1073,18 @@ class SurfaceTest(unittest.TestCase):
         for x in xaxis:
             for y in yaxis:
                 self.assertAlmostEqual(surface(x, y), x*y)
+
+
+class math_fcts_test(unittest.TestCase):
+
+    def test_prod_0(self):
+        p = prod([i for i in xrange(2, 10)])
+        self.assertAlmostEqual(p, 362880.0, 10)
+
+    def test_prod_2(self):
+        facts = [0.3, 6.23, 4.42, 4.789, -3.2, -1.3]
+        p = prod(facts)
+        self.assertAlmostEqual(p, 164.57722619519998, 10)
 
 if __name__ == "__main__":
     import sys
