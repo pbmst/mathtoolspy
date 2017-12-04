@@ -18,15 +18,15 @@ from mathconst import DOUBLE_TOL
 
 
 def abs_sign(a, b):
-    ''' The absolute value of A with the sign of B.'''
+    """ The absolute value of A with the sign of B."""
     return abs(a) if b >= 0 else -abs(a)
 
 
 def sign(x):
-    '''
+    """
     Returns the sign of the double number x.
     -1 if x < 0; 1 if x > 0 and 0 if x == 0
-    '''
+    """
     if x < 0:
         return -1
     elif x > 0:
@@ -59,11 +59,11 @@ def interpolation_linear(x, x1, x2, y1, y2):
 
 
 def interpolation_bilinear(x, y, x1, x2, y1, y2, z11, z21, z22, z12):
-    '''
+    """
     The points (x_i, y_i) and values z_ij are connected as follows:
     Starting from lower left going in mathematically positive direction, i.e. counter clockwise.
     Therefore: (x1,y1,z11), (x2,y1,z21), (x2,y2,z22), (x1,y2,z12).
-    '''
+    """
     t = (x - x1) / (x2 - x1)
     s = (y - y1) / (y2 - y1)
     v1 = (1.0 - t) * (1.0 - s) * z11
